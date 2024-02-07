@@ -8,7 +8,7 @@
 }
 
 input[type="text"] {
-  border: solid 1px var(--primary-color);
+  border: solid 1px rgb(24, 9, 233);
   padding: 10px;
   border-radius: 8px;
   margin-right: 4px;
@@ -19,8 +19,8 @@ input[type="text"] {
 button {
   padding: 10px;
   border: solid 1px var(--primary-color);
-  background: var(--primary-color);
-  color: white;
+  background: rgb(231, 230, 253);
+  color: rgb(24, 9, 233);
   border-radius: 8px;
 }
 
@@ -37,8 +37,4 @@ button {
   .results {
       grid-template-columns: 1fr;
   }
-}
-
-.brand-logo {
-  width: 50px;
 }
