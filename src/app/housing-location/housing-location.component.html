@@ -1,0 +1,13 @@
+<div class="card-location">
+  <div class="listing">
+
+    <img class="listing-photo" [src]="housingLocation.photo" alt="Exterior photo of {{housingLocation.name}}">
+    <div class="listing-heading">{{ housingLocation.name }}</div>
+    <div class="listing-location">{{ housingLocation.city}}, {{housingLocation.state }}</div>
+    <div class="read-more">
+      <a [routerLink]="['/details', housingLocation.id]">Learn More</a>
+    </div>
+
+  </div>
+
+</div>

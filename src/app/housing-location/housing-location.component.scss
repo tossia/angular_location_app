@@ -1,27 +1,30 @@
 .listing {
+  display: flexbox;
   background: var(--accent-color);
   border-radius: 30px;
-  padding-bottom: 30px;
+  height: 100%;
+  position: relative;
 }
 .listing-heading {
   color: var(--primary-color);
-  padding: 10px 20px 0 20px;
+  padding: 10px 10px 0 20px;
+  height: 50px;
 }
 .listing-photo {
-  height: 250px;
+  height: 200px;
   width: 100%;
   object-fit: cover;
   border-radius: 30px 30px 0 0;
 }
 .listing-location {
-  padding: 10px 20px 20px 20px;
+  padding: 10px;
 }
 .listing-location::before {
   content: url("/assets/location-pin.svg") / "";
 }
 
 section.listing a {
-  padding-left: 20px;
+  padding-left: 14px;
   text-decoration: none;
   color: var(--primary-color);
 }
@@ -29,3 +32,14 @@ section.listing a::after {
   content: "\203A";
   margin-left: 5px;
 }
+
+.card-location {
+  height: 440px;
+}
+
+.read-more {
+  position: absolute;
+  bottom: 30px;
+  padding: 0 0 40px 20px
+}
+

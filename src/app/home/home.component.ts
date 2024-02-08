@@ -11,20 +11,7 @@ import { HousingLocation } from '../housinglocation';
     CommonModule,
     HousingLocationComponent
   ],
-  template: `
-    <section>
-      <form>
-        <input type="text" placeholder="Filter by city" #filter>
-        <button class="primary" type="button" (click)="filterResults(filter.value)">Search</button>
-      </form>
-    </section>
-    <section class="results">
-      <app-housing-location
-        *ngFor="let housingLocation of filteredLocationList"
-        [housingLocation]="housingLocation">
-      </app-housing-location>
-    </section>
-  `,
+  templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })
 
@@ -32,6 +19,7 @@ export class HomeComponent {
   housingLocationList: HousingLocation[] = [];
   housingService: HousingService = inject(HousingService);
   filteredLocationList: HousingLocation[] = [];
+
   constructor() {
     this.housingService.getAllHousingLocations().then((housingLocationList: HousingLocation[]) => {
       this.housingLocationList = housingLocationList;
@@ -51,8 +39,3 @@ export class HomeComponent {
 }
 
 
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/

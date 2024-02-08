@@ -1,15 +1,15 @@
 .listing-photo {
   height: 600px;
-  width: 50%;
+  position: left;
   object-fit: cover;
   border-radius: 30px;
-  float: right;
+  float : right;
 }
 
 .listing-heading {
-  font-size: 48pt;
+  font-size: 20px;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .listing-location::before {
@@ -17,13 +17,13 @@
 }
 
 .listing-location {
-  font-size: 24pt;
-  margin-bottom: 15px;
+  font-size: 12pt;
+  margin-bottom: 5px;
 }
 
 .listing-features > .section-heading {
   color: var(--secondary-color);
-  font-size: 24pt;
+  font-size: 12pt;
   margin-bottom: 15px;
 }
 
